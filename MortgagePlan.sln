@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5C6957EF-9EEA-491D-9DCD-F29EF0C3A363}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mortgage.Cli", "src\Mortgage.Cli\Mortgage.Cli.csproj", "{386C4652-D1C3-48E9-803C-ADF6B30009C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mortgage.Calculator", "src\Mortgage.Calculator\Mortgage.Calculator.csproj", "{EBBA774A-AB9E-4E86-8BC9-B656D04A1E15}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mortgage.Data", "src\Mortgage.Data\Mortgage.Data.csproj", "{896B295F-7B5E-49F7-BE8C-2DA34AFF3A73}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{DC8DE794-2AD2-4962-9A59-FC24D673A5D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mortgage.Cli.Tests", "test\Mortgage.Cli.Tests\Mortgage.Cli.Tests.csproj", "{267F5057-A2E5-492D-8C63-C1131D62F47F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mortgage.Calculator.Tests", "test\Mortgage.Calculator.Tests\Mortgage.Calculator.Tests.csproj", "{A02E2EBD-74AF-4ABF-A8E8-D76361767CD7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{386C4652-D1C3-48E9-803C-ADF6B30009C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{386C4652-D1C3-48E9-803C-ADF6B30009C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{386C4652-D1C3-48E9-803C-ADF6B30009C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{386C4652-D1C3-48E9-803C-ADF6B30009C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBBA774A-AB9E-4E86-8BC9-B656D04A1E15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBBA774A-AB9E-4E86-8BC9-B656D04A1E15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBBA774A-AB9E-4E86-8BC9-B656D04A1E15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBBA774A-AB9E-4E86-8BC9-B656D04A1E15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{896B295F-7B5E-49F7-BE8C-2DA34AFF3A73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{896B295F-7B5E-49F7-BE8C-2DA34AFF3A73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{896B295F-7B5E-49F7-BE8C-2DA34AFF3A73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{896B295F-7B5E-49F7-BE8C-2DA34AFF3A73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{267F5057-A2E5-492D-8C63-C1131D62F47F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{267F5057-A2E5-492D-8C63-C1131D62F47F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{267F5057-A2E5-492D-8C63-C1131D62F47F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{267F5057-A2E5-492D-8C63-C1131D62F47F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A02E2EBD-74AF-4ABF-A8E8-D76361767CD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A02E2EBD-74AF-4ABF-A8E8-D76361767CD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A02E2EBD-74AF-4ABF-A8E8-D76361767CD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A02E2EBD-74AF-4ABF-A8E8-D76361767CD7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{386C4652-D1C3-48E9-803C-ADF6B30009C3} = {5C6957EF-9EEA-491D-9DCD-F29EF0C3A363}
+		{EBBA774A-AB9E-4E86-8BC9-B656D04A1E15} = {5C6957EF-9EEA-491D-9DCD-F29EF0C3A363}
+		{896B295F-7B5E-49F7-BE8C-2DA34AFF3A73} = {5C6957EF-9EEA-491D-9DCD-F29EF0C3A363}
+		{A02E2EBD-74AF-4ABF-A8E8-D76361767CD7} = {DC8DE794-2AD2-4962-9A59-FC24D673A5D1}
+		{267F5057-A2E5-492D-8C63-C1131D62F47F} = {DC8DE794-2AD2-4962-9A59-FC24D673A5D1}
+	EndGlobalSection
+EndGlobal
