@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 using Mortgage.Calculator;
+using static System.Console;
 
 namespace Mortgage.Cli
 {
@@ -7,11 +9,15 @@ namespace Mortgage.Cli
     {
         static void Main(string[] args)
         {
+            OutputEncoding = System.Text.Encoding.UTF8; //Display euro symbol
+
             var arguments = CommandLineParser.ReadCmdLine(args);
-            if(arguments is null) return;
+            if (arguments is null) return;
             
-            var test = (new MortgageManager()).MortgageCalculatorResponse("Juha", 1000, 5, 2);
-            Console.WriteLine("Hello World!");
+            WriteLine((new MortgageManager())
+                .MortgageCalculatorResponse(arguments.CustomerName, arguments.LoanAmount, arguments.Interest,
+                    arguments.LoanTerm));
+            ReadKey();
         }
     }
 }
