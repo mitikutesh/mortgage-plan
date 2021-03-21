@@ -13,9 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mortgage.Data", "src\Mortga
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{DC8DE794-2AD2-4962-9A59-FC24D673A5D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mortgage.Cli.Test", "test\Mortgage.Cli.Test\Mortgage.Cli.Test.csproj", "{2D6C2852-8D55-441E-950C-2B943037AC71}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mortgage.Cli.Test", "test\Mortgage.Cli.Test\Mortgage.Cli.Test.csproj", "{2D6C2852-8D55-441E-950C-2B943037AC71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mortgage.Calculator.Test", "test\Mortgage.Calculator.Test\Mortgage.Calculator.Test.csproj", "{2228A276-6F04-4468-B927-8ABCCE69E545}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mortgage.Calculator.Test", "test\Mortgage.Calculator.Test\Mortgage.Calculator.Test.csproj", "{2228A276-6F04-4468-B927-8ABCCE69E545}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mortgage.Web", "src\Mortgage.Web\Mortgage.Web.csproj", "{55DCA77E-6A99-47CB-9CED-E50BC36ADAED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{2228A276-6F04-4468-B927-8ABCCE69E545}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2228A276-6F04-4468-B927-8ABCCE69E545}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2228A276-6F04-4468-B927-8ABCCE69E545}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55DCA77E-6A99-47CB-9CED-E50BC36ADAED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55DCA77E-6A99-47CB-9CED-E50BC36ADAED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55DCA77E-6A99-47CB-9CED-E50BC36ADAED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55DCA77E-6A99-47CB-9CED-E50BC36ADAED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
