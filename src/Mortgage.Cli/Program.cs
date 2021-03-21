@@ -1,23 +1,40 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 using Mortgage.Calculator;
 using static System.Console;
 
 namespace Mortgage.Cli
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static async Task Main(string[] args)
         {
-            OutputEncoding = System.Text.Encoding.UTF8; //Display euro symbol
+            try
+            {
+                var arguments = CommandLineParser.ReadCmdLine(args);
+                if (arguments is null) return;
+                //var path = @"C:\Users\mitik\Downloads\Codetest-Mortageplan (1)\prospects.txt";
+                await FileReadWrite.DisplayDataAsync(arguments.FilePath);
 
-            var arguments = CommandLineParser.ReadCmdLine(args);
-            if (arguments is null) return;
-            
-            WriteLine((new MortgageManager())
-                .MortgageCalculatorResponse(arguments.CustomerName, arguments.LoanAmount, arguments.Interest,
-                    arguments.LoanTerm));
-            ReadKey();
+                ReadKey();
+            }
+            catch (Exception ex)
+            {
+                WriteLine("Error: " + ex.Message);
+            }finally
+            {
+                WriteLine("Try Re running!");
+            }
+         
         }
+
+
+       
+
     }
 }

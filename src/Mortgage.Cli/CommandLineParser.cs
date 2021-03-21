@@ -15,6 +15,7 @@ namespace Mortgage.Cli
                 .Validate(model, a =>
                 {
                     a.ThrowOnFailures();
+                    a.IncludeProperties(x => x.FilePath);
                     a.IncludeProperties(x => x.CustomerName);
                     a.IncludeProperties(x => x.CustomerName);
                     a.IncludeProperties(x => x.LoanTerm);
