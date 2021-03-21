@@ -1,18 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30709.132
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5C6957EF-9EEA-491D-9DCD-F29EF0C3A363}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mortgage.Cli", "src\Mortgage.Cli\Mortgage.Cli.csproj", "{386C4652-D1C3-48E9-803C-ADF6B30009C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mortgage.Cli", "src\Mortgage.Cli\Mortgage.Cli.csproj", "{386C4652-D1C3-48E9-803C-ADF6B30009C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mortgage.Calculator", "src\Mortgage.Calculator\Mortgage.Calculator.csproj", "{EBBA774A-AB9E-4E86-8BC9-B656D04A1E15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mortgage.Calculator", "src\Mortgage.Calculator\Mortgage.Calculator.csproj", "{EBBA774A-AB9E-4E86-8BC9-B656D04A1E15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mortgage.Data", "src\Mortgage.Data\Mortgage.Data.csproj", "{896B295F-7B5E-49F7-BE8C-2DA34AFF3A73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mortgage.Data", "src\Mortgage.Data\Mortgage.Data.csproj", "{896B295F-7B5E-49F7-BE8C-2DA34AFF3A73}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{DC8DE794-2AD2-4962-9A59-FC24D673A5D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mortgage.Cli.Tests", "test\Mortgage.Cli.Tests\Mortgage.Cli.Tests.csproj", "{267F5057-A2E5-492D-8C63-C1131D62F47F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mortgage.Cli.Test", "test\Mortgage.Cli.Test\Mortgage.Cli.Test.csproj", "{2D6C2852-8D55-441E-950C-2B943037AC71}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mortgage.Calculator.Tests", "test\Mortgage.Calculator.Tests\Mortgage.Calculator.Tests.csproj", "{A02E2EBD-74AF-4ABF-A8E8-D76361767CD7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mortgage.Calculator.Test", "test\Mortgage.Calculator.Test\Mortgage.Calculator.Test.csproj", "{2228A276-6F04-4468-B927-8ABCCE69E545}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,20 +35,25 @@ Global
 		{896B295F-7B5E-49F7-BE8C-2DA34AFF3A73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{896B295F-7B5E-49F7-BE8C-2DA34AFF3A73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{896B295F-7B5E-49F7-BE8C-2DA34AFF3A73}.Release|Any CPU.Build.0 = Release|Any CPU
-		{267F5057-A2E5-492D-8C63-C1131D62F47F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{267F5057-A2E5-492D-8C63-C1131D62F47F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{267F5057-A2E5-492D-8C63-C1131D62F47F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{267F5057-A2E5-492D-8C63-C1131D62F47F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A02E2EBD-74AF-4ABF-A8E8-D76361767CD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A02E2EBD-74AF-4ABF-A8E8-D76361767CD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A02E2EBD-74AF-4ABF-A8E8-D76361767CD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A02E2EBD-74AF-4ABF-A8E8-D76361767CD7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D6C2852-8D55-441E-950C-2B943037AC71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D6C2852-8D55-441E-950C-2B943037AC71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D6C2852-8D55-441E-950C-2B943037AC71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D6C2852-8D55-441E-950C-2B943037AC71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2228A276-6F04-4468-B927-8ABCCE69E545}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2228A276-6F04-4468-B927-8ABCCE69E545}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2228A276-6F04-4468-B927-8ABCCE69E545}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2228A276-6F04-4468-B927-8ABCCE69E545}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{386C4652-D1C3-48E9-803C-ADF6B30009C3} = {5C6957EF-9EEA-491D-9DCD-F29EF0C3A363}
 		{EBBA774A-AB9E-4E86-8BC9-B656D04A1E15} = {5C6957EF-9EEA-491D-9DCD-F29EF0C3A363}
 		{896B295F-7B5E-49F7-BE8C-2DA34AFF3A73} = {5C6957EF-9EEA-491D-9DCD-F29EF0C3A363}
-		{A02E2EBD-74AF-4ABF-A8E8-D76361767CD7} = {DC8DE794-2AD2-4962-9A59-FC24D673A5D1}
-		{267F5057-A2E5-492D-8C63-C1131D62F47F} = {DC8DE794-2AD2-4962-9A59-FC24D673A5D1}
+		{2D6C2852-8D55-441E-950C-2B943037AC71} = {DC8DE794-2AD2-4962-9A59-FC24D673A5D1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA6A35C5-94FC-43ED-9E29-34F0A9B69CBF}
 	EndGlobalSection
 EndGlobal

@@ -1,15 +1,18 @@
-﻿using System;
 using NUnit.Framework;
 
-namespace Mortgage.Calculator.Tests
+namespace Mortgage.Cli.Test
 {
-    [TestFixture]
     public class Tests
     {
+        [SetUp]
+        public void Setup()
+        {
+        }
+
         [Test]
         public void Test1()
         {
-            Assert.True(true);
+            Assert.Pass();
         }
     }
 }
