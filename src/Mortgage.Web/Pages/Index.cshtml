@@ -3,8 +3,71 @@
 @{
     ViewData["Title"] = "Home page";
 }
+@using Mortgage.Calculator.Interfaces;
+@inject IMortgageManager _mortgageManager;
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <p>Use the following formulat to calcuate your monthly paymenet.</p>
+</div>
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <br />
+            <br />
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Prospects[0].CustomerName)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Prospects[0].LoanAmount)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Prospects[0].AnnualInterest)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Prospects[0].LoanTerm)
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Prospects)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CustomerName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.LoanAmount)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.AnnualInterest)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.LoanTerm)
+                            </td>
+                            <td>
+                                <form method="post">
+                                    <input hidden asp-for="ProspectDTO.Id" value="@item.Id" class="form-control" />
+                                    <div class="form-group">
+                                        <input type="submit" value="Calculate" class="btn  btn-primary" @ViewData["selected"]/>
+                                    </div>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-5 offset-md-1">
+            <div class="justify-content-center">
+                </br></br>
+                @ViewData["MortageResult"]"
+            </div>
+        </div>
+    </div>
 </div>

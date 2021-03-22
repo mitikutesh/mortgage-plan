@@ -1,3 +1,4 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -5,7 +6,10 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Mortgage.Calculator;
+using Mortgage.Calculator.Interfaces;
 using Mortgage.Data;
+using Mortgage.Data.Repository;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,7 +30,10 @@ namespace Mortgage.Web
         public void ConfigureServices(IServiceCollection services) 
         {
             services.AddDbContext<MortgagePlannerContext>(options =>
-            options.UseSqlServer(Configuration.GetConnectionString("MortgageContext"), b => b.MigrationsAssembly("Mortgage.Data"))); 
+            options.UseSqlServer(Configuration.GetConnectionString("MortgageContext"), b => b.MigrationsAssembly("Mortgage.Data")));
+            services.AddScoped<IMortgageProspect, MortgageProspect>();
+            services.AddAutoMapper(typeof(MappingProfile));
+            services.AddScoped<IMortgageManager, MortgageManager>();
             services.AddRazorPages();
         }
 
