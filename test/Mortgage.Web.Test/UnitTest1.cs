@@ -1,6 +1,6 @@
 using NUnit.Framework;
 
-namespace Mortgage.Cli.Test
+namespace Mortgage.Web.Test
 {
     public class Tests
     {

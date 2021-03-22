@@ -31,11 +31,7 @@ namespace Mortgage.Calculator.Test
 
         public static string[] TestCases()// = new string[]
         {
-            //"Juha,1000,5,2",
-            //"Karvinen,4356,1.27,6",
-            //"Claes Månsson,1300.55,8.67,2",
-            //"\"Clarencé,Andersson\",2000,6,4"
-            var path = GetPath("TestData.txt");
+             var path = GetPath("TestData.txt");
             return File.ReadAllLines(path)
             .Skip(1)
             .TakeWhile(s => !string.IsNullOrEmpty(s))
@@ -54,10 +50,10 @@ namespace Mortgage.Calculator.Test
             Decimal monthlyPayement = Decimal.Parse(test[4].Replace(".", ","));
 
             var expected = "****************************************************************************************************\n" +
-             $"Prospect 1: {customerName} wants to borrow {amount}€ for a period of {loanTerm} years and pay {monthlyPayement}€ each month \n" +
-             "* **************************************************************************************************";
+             $"Prospect 1: {customerName} wants to borrow {amount}€ for a period of {loanTerm} years and pay {monthlyPayement}€ each month. \n" +
+             "***************************************************************************************************";
 
-            var result = CreateInstance().MortgageCalculatorResponse(customerName, amount, apr, loanTerm);
+            var result = CreateInstance().MortgageCalculatorResponse(1,customerName, amount, apr, loanTerm);
             Assert.AreEqual(expected, result);
         }
 
