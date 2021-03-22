@@ -34,7 +34,7 @@ namespace Mortgage.Cli
                 Decimal amount = Decimal.Parse(data[1].Replace(".", ","));
                 Decimal apr = Decimal.Parse(data[2].Replace(".", ","));
                 int loanTerm = int.Parse(data[3]);
-                WriteLine((new MortgageManager()).MortgageCalculatorResponse(customerName, amount, apr, loanTerm));
+                WriteLine((new MortgageManager()).MortgageCalculatorResponse(0,customerName, amount, apr, loanTerm));
             }
         }
     }

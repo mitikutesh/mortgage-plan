@@ -16,10 +16,10 @@ namespace Mortgage.Cli
                 {
                     a.ThrowOnFailures();
                     a.IncludeProperties(x => x.FilePath);
-                    a.IncludeProperties(x => x.CustomerName);
-                    a.IncludeProperties(x => x.CustomerName);
-                    a.IncludeProperties(x => x.LoanTerm);
-                    a.IncludeProperties(x => x.Interest);
+                    //a.IncludeProperties(x => x.CustomerName);
+                    //a.IncludeProperties(x => x.CustomerName);
+                    //a.IncludeProperties(x => x.LoanTerm);
+                    //a.IncludeProperties(x => x.Interest);
                 });
             return model;
         }
