@@ -24,6 +24,7 @@ NOTE : Make sure to have a dotnet run installed on your machine
 
 `Mortgage.Web` can be launched either through Visual Studio or from a command prompt in `src\Mortgage.Web`:
 
+-before running set the database connectionsetting in appsetting.json
 ```sh
 dotnet run
 ```
