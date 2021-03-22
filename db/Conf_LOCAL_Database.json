@@ -1,0 +1,8 @@
+{
+	"silent": "false",
+	"servername": "Data Source=DESKTOP-0I4CC7E;Database=Development;Trusted_Connection=True;MultipleActiveResultSets=true",
+	"database": "MortgageDatabase",
+	"files": ".\\db",
+	"output": ".\\db\\outputs",
+	"environment": "DEV"
+}
