@@ -2,6 +2,6 @@
 {
     public interface IMortgageManager
     {
-        public string MortgageCalculatorResponse(string customerName, decimal amount, decimal apr, int loanTerm);
+        public string MortgageCalculatorResponse(int id,string customerName, decimal amount, decimal apr, int loanTerm);
     }
 }

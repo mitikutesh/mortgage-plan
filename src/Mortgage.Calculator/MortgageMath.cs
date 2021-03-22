@@ -6,24 +6,34 @@ namespace Mortgage.Calculator
     {
         public static decimal Power(decimal baseNumber, int expNumber)
         {
-            decimal result = 1;
-            //for negative force
-            bool sing = true;
-            if (expNumber < 0)
+            try
             {
-                sing = false;
-                expNumber = expNumber * -1;
+                decimal result = 1;
+                //for negative force
+                bool sing = true;
+                if (expNumber < 0)
+                {
+                    sing = false;
+                    expNumber = expNumber * -1;
+                }
+
+                for (int i = 1; i <= expNumber; i++)
+                {
+                    if (sing)
+                        result = result * baseNumber;
+                    else
+                        result /= baseNumber;
+                }
+
+                return result;
+            }
+            catch (Exception)
+            {
+                //log exception
+                throw;
             }
 
-            for (int i = 1; i <= expNumber; i++)
-            {
-                if (sing)
-                    result = result * baseNumber;
-                else
-                    result /= baseNumber;
-            }
-
-            return result;
+            
         }
 
         /// <summary>
@@ -43,15 +53,23 @@ namespace Mortgage.Calculator
 
               E = U[b(1 + b)^p]/[(1 + b)^p - 1]
             */
-            Math.Round(2.3);
-            decimal E, U, b;
-            int p;
-            U = amount;
-            p = 12 * loanTerm;
-            b = (apr / 12) / 100;
-            E = U * b * Power(1 + (b), p) / (Power((1 + (b)), p) - 1);
-            E = Decimal.Round(E, 2);
-            return E;
+
+            try
+            {
+                decimal E, U, b;
+                int p;
+                U = amount;
+                p = 12 * loanTerm;
+                b = (apr / 12) / 100;
+                E = U * b * Power(1 + (b), p) / (Power((1 + (b)), p) - 1);
+                E = Decimal.Round(E, 2);
+                return E;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            
         }
     }
 }
